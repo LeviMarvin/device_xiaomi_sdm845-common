@@ -177,6 +177,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sdm845
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0 \
