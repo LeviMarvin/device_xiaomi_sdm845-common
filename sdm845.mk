@@ -191,10 +191,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0 \
     android.hardware.gnss@2.0.vendor
 
-# fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
