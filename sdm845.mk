@@ -174,17 +174,21 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 # Fingerprint
+# Using AOSP native fingerprint services and DISABLE the fingerprint.
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sdm845
+    android.hardware.biometrics.fingerprint \
+    android.hardware.biometrics.fingerprint@2.3 \
+    android.hardware.biometrics.fingerprint@2.3-service
 
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
 
 # Gatekeeper
+# Using TrusAuth Gatekeeper 1.1
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.1 \
+    android.hardware.gatekeeper@1.1-service-ta
 
 # GNSS
 PRODUCT_PACKAGES += \
