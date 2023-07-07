@@ -38,6 +38,11 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/dipper
 TARGET_KERNEL_CLANG_COMPILE := true
+# Kernel: Build: Use external dtc.
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
+# Kernel: Build: Use external clang.
+TARGET_KERNEL_CLANG_VERSION := WeebX
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-weebx
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
