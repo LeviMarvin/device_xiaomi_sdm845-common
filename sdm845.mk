@@ -184,6 +184,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# e2fsprogs (included tune2fs)
+PRODUCT_PACKAGES += \
+    e2fsprogs
+
 # Gatekeeper
 # Using TrusAuth Gatekeeper 1.1
 PRODUCT_PACKAGES += \
