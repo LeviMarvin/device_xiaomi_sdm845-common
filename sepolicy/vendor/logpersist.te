@@ -1,0 +1,4 @@
+allow logpersist cache_private_backup_file:dir { add_name open read search };
+allow logpersist cache_private_backup_file:file { getattr ioctl open };
+allow logpersist unlabeled:dir { add_name open read };
+allow logpersist unlabeled:file { getattr ioctl open };
