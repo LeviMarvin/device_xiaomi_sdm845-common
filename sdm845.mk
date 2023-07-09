@@ -410,6 +410,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
 
+# Packages needed in YAAP
+PRODUCT_PACKAGES += \
+	libtinyxml2
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
