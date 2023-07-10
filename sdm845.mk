@@ -245,9 +245,12 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# Keymaster
-# Using TrusAuth KeyMint 2.0 instead of the KeyMaster 3.0 from the vendor.
+# KM
+# Using TrusAuth KeyMint 2.0 and KeyMaster 4.1 instead of the KeyMaster 3.0 from the vendor.
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.1-service-ta \
     android.hardware.security.keymint \
     android.hardware.security.keymint.vendor \
     android.hardware.security.keymint-service-ta
